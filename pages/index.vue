@@ -42,7 +42,7 @@ const cancelTooltip = () => {
   if (tt) tt.innerHTML = `Copy to clipboard.`
 }
 const copyBash = () => {
-  const bash = 'pip install vinted.ninja'
+  const bash = 'curl https://api.vinted.ninja'
   navigator.clipboard.writeText(bash)
   tooltip.value = true
   const tt = document.querySelector('.tooltiptext')
@@ -129,7 +129,7 @@ const copyBash = () => {
               class="win-body rounded-b-lg bg-gray-200/90 dark:bg-slate-800/90 px-3 py-2 font-mono backdrop-filter backdrop-blur-lg"
             >
               <div>
-                $ pip install vinted.ninja
+                $ curl https://api.vinted.ninja
               </div>
             </div>
           </div>
